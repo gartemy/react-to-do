@@ -9,6 +9,7 @@
 }
 
 body {
+  background-color: #0078d4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -21,6 +22,7 @@ body {
   height: 530px;
   transform: translate(-50%, -50%);
   box-shadow: 1px 2px 20px #f3f3f3;
+  background-color: #ffffff;
   border-radius: 10px;
   border: 1px solid #f1f1f1;
   font-size: 14px;
@@ -29,7 +31,36 @@ body {
     background-color: #f4f6f8;
     width: 200px;
     height: calc(100% - 120px);
+    border-radius: 10px 0 0 10px;
     border-right: 1px solid #f1f1f1;
     padding: 60px 20px;
+  }
+}
+
+.field {
+  background: #ffffff;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 8px 12px;
+  width: 100%;
+  font-size: 14px;
+
+  &:focus {
+    border-color: #dbdbdb;
+  }
+}
+
+.button {
+  background: #4dd599;
+  border-radius: 4px;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+
+  &:hover {
+    background: darken(#4dd599, 6%);
   }
 }

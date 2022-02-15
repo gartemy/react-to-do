@@ -1,6 +1,20 @@
 .list {
   margin-bottom: 30px;
 
+  &__add-btn {
+    span {
+      opacity: 0.5;
+    }
+    &:hover {
+      path {
+        stroke: #000000;
+      }
+      span {
+        opacity: 1;
+      }
+    }
+  }
+
   li {
     display: flex;
     align-items: center;
@@ -14,25 +28,9 @@
     }
 
     i {
+      display: flex;
+      align-items: center;
       margin-right: 8px;
-    }
-
-    .badge {
-      width: 10px;
-      height: 10px;
-      border-radius: 30px;
-
-      &--green {
-        background-color: #42b883;
-      }
-
-      &--blue {
-        background-color: #64c4ed;
-      }
-
-      &--pink {
-        background-color: #ffbbcc;
-      }
     }
   }
 }
