@@ -8,6 +8,8 @@
     sans-serif;
 }
 
+.element::-webkit-scrollbar { width: 100px; }
+
 body {
   background-color: #0078d4;
   -webkit-font-smoothing: antialiased;
@@ -40,6 +42,7 @@ body {
   &__tasks {
     flex: 1;
     padding: 60px;
+    overflow: auto;
   }
 }
 
@@ -68,5 +71,26 @@ body {
 
   &:hover {
     background: darken(#4dd599, 6%);
+  }
+
+  &:active {
+    background: darken(#4dd599, 10%);
+  }
+
+  &:disabled {
+    background: #d8d8d8;
+  }
+
+  &--grey {
+    background: #f4f6f8;
+    color: #444444;
+
+    &:hover {
+      background: darken(#f4f6f8, 3%);
+    }
+
+    &:active {
+      background: darken(#f4f6f8, 6%);
+    }
   }
 }
